@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Skills &amp; Tools – Edgar TC</title>
+  <meta name="description" content="Skills and tools of Edgar TC, Cloud-Native DevOps Engineer: AWS, Terraform, CloudFormation, Docker, Kubernetes, ArgoCD, CI/CD and Agentic AI.">
+
+  <!-- Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Marks the page as "script is available" so the scroll animations can start hidden -->
+  <script>document.documentElement.className += ' js';</script>
+
+  <!-- Shared styles (top bar, buttons, hover effects) + skills page styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/skills.css">
+</head>
+
+<body>
+
+<main class="page page--skills" id="top">
+
+  <!-- ============ TOP BAR (same as the other pages) ============ -->
+  <header class="top">
+
+    <a class="pill" href="index.html">
+      <i class="pill__dot" aria-hidden="true"></i>
+      Available for New Opportunities
+    </a>
+
+    <nav class="menu" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a class="is-active" href="skills.html" aria-current="page">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <a class="talk fx fx--dark" href="contact.html">
+      Let’s Talk
+      <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+    </a>
+
+  </header>
+
+  <!-- ============ PAGE HEADING ============ -->
+  <section class="s-head">
+    <div>
+      <p class="s-label">MY SKILLS</p>
+      <h1 class="s-title"><span class="s-mask"><span>Skills &amp; Tools</span></span></h1>
+      <p class="s-sub">Technologies and tools I work with to build, deploy and monitor scalable systems.</p>
+    </div>
+    <p class="s-aside">Always learning and exploring new technologies to improve and automate infrastructure and delivery.</p>
+  </section>
+
+  <!-- ============ SKILL TILES ============
+       Each tile links to the tool's official website.
+       To add a tile: copy one <li> block. To remove one: delete its <li> block.
+       --c = column position (0 to 5), used for the staggered animation. -->
+  <ul class="s-grid">
+
+    <li class="s-tile reveal" style="--c:0">
+      <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">
+        <img class="s-icon s-icon--wide" src="assets/skills/aws.svg" alt="" width="128" height="128">
+        <strong>AWS</strong><span>EC2, S3, VPC, IAM, CloudWatch</span>
+      </a>
+    </li>
+    <li class="s-tile reveal" style="--c:1">
+      <a href="https://www.terraform.io/" target="_blank" rel="noopener noreferrer">
+        <img class="s-icon" src="assets/skills/terraform.svg" alt="" width="128" height="128">
+        <strong>Terraform</strong><span>Infrastructure as Code</span>
+      </a>
+    </li>
+    <li class="s-tile reveal" style="--c:2">
+      <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">
+        <img class="s-icon" src="assets/skills/docker.svg" alt="" width="128" height="128">
+        <strong>Docker</strong><span>Containerization</span>
+      </a>
+    </li>
+    <li class="s-tile reveal" style="--c:3">
+      <a href="https://kubernetes.io/" target="_blank" rel="noopener noreferrer">
+        <img class="s-icon" src="assets/skills/kubernetes.svg" alt="" width="128" height="128">
+        <strong>Kubernetes</strong><span>Container Orchestration</span>
+      </a>
+    </li>
+    <li class="s-tile reveal" style="--c:4">
+      <a href="https://www.jenkins.io/" target="_blank" rel="noopener noreferrer">
+        <img class="s-icon" src="assets/skills/jenkins.svg" alt="" width="128" height="128">
+        <strong>Jenkins</strong><span>CI/CD Automation</span>
+      </a>
+    </li>
+    <li class="s-tile reveal" style="--c:5">
+      <a href="https://argo-cd.readthedocs.io/" target="_blank" rel="noopener noreferrer">
+        <img class="s-icon" src="assets/skills/argocd.svg" alt="" width="128" height="128">
+        <strong>ArgoCD</strong><span>GitOps Deployment</span>
+      </a>
+    </li>
+
+    <li class="s-tile reveal" style="--c:0">
+      <a href="https://aws.amazon.com/cloudformation/" target="_blank" rel="noopener noreferrer">
+        <img class="s-icon" src="assets/skills/cloudformation.svg" alt="" width="128" height="128">
+        <strong>CloudFormation</strong><span>Infrastructure as Code</span>
+      </a>
+    </li>
+    <li class="s-tile reveal" style="--c:1">
+      <a href="https://www.linux.org/" target="_blank" rel="noopener noreferrer">
+        <img class="s-icon" src="assets/skills/linux.svg" alt="" width="128" height="128">
+        <strong>Linux</strong><span>Scripting &amp; Administration</span>
+      </a>
+    </li>
+    <li class="s-tile reveal" style="--c:2">
+      <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
+        <img class="s-icon" src="assets/skills/python.svg" alt="" width="128" height="128">
+        <strong>Python</strong><span>Automation &amp; Scripting</span>
+      </a>
+    </li>
+    <li class="s-tile reveal" style="--c:3">
+      <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">
+        <img class="s-icon" src="assets/skills/git.svg" alt="" width="128" height="128">
+        <strong>Git</strong><span>Version Control</span>
+      </a>
+    </li>
+    <li class="s-tile reveal" style="--c:4">
+      <a href="https://prometheus.io/" target="_blank" rel="noopener noreferrer">
+        <img class="s-icon" src="assets/skills/prometheus.svg" alt="" width="128" height="128">
+        <strong>Prometheus</strong><span>Monitoring</span>
+      </a>
+    </li>
+    <li class="s-tile reveal" style="--c:5">
+      <a href="https://grafana.com/" target="_blank" rel="noopener noreferrer">
+        <img class="s-icon" src="assets/skills/grafana.svg" alt="" width="128" height="128">
+        <strong>Grafana</strong><span>Visualization</span>
+      </a>
+    </li>
+
+  </ul>
+
+  <!-- ============ AGENTIC AI (featured) ============ -->
+  <section class="s-ai reveal" aria-label="Agentic AI">
+    <img class="s-ai__icon" src="assets/skills/agentic-ai.svg" alt="" width="128" height="128">
+    <div class="s-ai__text">
+      <p class="s-ai__label">CURRENTLY EXPLORING</p>
+      <h2>Agentic AI for DevOps</h2>
+      <p>Exploring Agentic AI integration for automated incident investigation, correlating monitoring alerts, application logs, infrastructure metrics and deployment events to identify potential root causes, with human-approved AI remediation workflows.</p>
+    </div>
+    <ul class="s-ai__tags">
+      <li>Incident Investigation</li>
+      <li>CI/CD Failure Analysis</li>
+      <li>Kubernetes Diagnostics</li>
+      <li>Human-Approved Remediation</li>
+    </ul>
+  </section>
+
+</main>
+
+<script src="js/skills.js"></script>
+</body>
+</html>

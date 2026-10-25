@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Projects – Edgar TC</title>
+  <meta name="description" content="Projects by Edgar TC: AWS, Terraform, CI/CD, Kubernetes, monitoring, Agentic AI and accessibility.">
+
+  <!-- Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Marks the page as "script is available" so the scroll animations can start hidden -->
+  <script>document.documentElement.className += ' js';</script>
+
+  <!-- Shared styles (top bar, buttons, hover effects) + projects styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/projects.css">
+</head>
+
+<body>
+
+<main class="page page--projects" id="top">
+
+  <!-- ============ TOP BAR ============ -->
+  <header class="top">
+    <a class="pill" href="index.html">
+      <i class="pill__dot" aria-hidden="true"></i>
+      Available for New Opportunities
+    </a>
+
+    <nav class="menu" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="is-active" href="projects.html" aria-current="page">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <a class="talk fx fx--dark" href="contact.html">
+      Let’s Talk
+      <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+    </a>
+  </header>
+
+  <!-- ============ PAGE HEADING ============ -->
+  <section class="p-head">
+    <div>
+      <p class="p-label">MY WORK</p>
+      <h1 class="p-title"><span class="p-mask"><span>Projects</span></span></h1>
+      <p class="p-sub">Real-world projects that showcase my skills in cloud, DevOps and automation.</p>
+    </div>
+
+    <!-- TODO: replace YOUR_GITHUB_USERNAME with the real GitHub username -->
+    <a class="p-github fx fx--card" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer">
+      <svg class="p-github__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+      View GitHub
+      <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+    </a>
+  </section>
+
+  <!-- ============ FILTERS ============ -->
+  <div class="p-filters" role="group" aria-label="Filter projects">
+    <button class="p-chip" type="button" data-filter="all" aria-pressed="true">All</button>
+    <button class="p-chip" type="button" data-filter="aws" aria-pressed="false">AWS</button>
+    <button class="p-chip" type="button" data-filter="terraform" aria-pressed="false">Terraform</button>
+    <button class="p-chip" type="button" data-filter="kubernetes" aria-pressed="false">Kubernetes</button>
+    <button class="p-chip" type="button" data-filter="cicd" aria-pressed="false">CI/CD</button>
+    <button class="p-chip" type="button" data-filter="monitoring" aria-pressed="false">Monitoring</button>
+    <button class="p-chip" type="button" data-filter="agentic" aria-pressed="false">Agentic AI</button>
+    <button class="p-chip" type="button" data-filter="accessibility" aria-pressed="false">Accessibility</button>
+  </div>
+
+  <!-- ============ OFFICE PROJECTS ============ -->
+  <section class="p-group" data-group>
+    <h2>Office Projects <small>CGI · 3</small></h2>
+
+    <ul class="p-grid">
+
+      <!-- Cloud / DevOps Engineer -->
+      <li class="p-card reveal" data-filters="aws terraform kubernetes cicd monitoring">
+        <a href="project-banking-devops.html">
+          <div class="p-banner b-navy" aria-hidden="true">
+            <span class="p-logo p-logo--wide"><img src="assets/skills/aws.svg" alt="" width="64" height="64"></span>
+            <span class="p-logo"><img src="assets/skills/terraform.svg" alt="" width="64" height="64"></span>
+            <span class="p-logo"><img src="assets/skills/kubernetes.svg" alt="" width="64" height="64"></span>
+            <span class="p-logo"><img src="assets/skills/argocd.svg" alt="" width="64" height="64"></span>
+          </div>
+
+          <div class="p-body">
+            <p class="p-kicker">OFFICE · CGI</p>
+            <h3 class="p-name">Cloud / DevOps Engineer — Digital Banking Platform</h3>
+            <p class="p-desc">Cloud and DevOps support, monitoring and CI/CD for a digital banking platform serving 32 customer organizations across Canadian and European markets.</p>
+
+            <div class="p-foot">
+              <ul class="p-tags"><li>Terraform</li><li>Jenkins</li><li>Kubernetes</li><li>ArgoCD</li></ul>
+              <span class="p-go" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- AI-Powered PR Security Review Agent -->
+      <li class="p-card reveal" data-filters="agentic">
+        <a href="project-pr-security-agent.html">
+          <div class="p-banner b-violet" aria-hidden="true">
+            <span class="p-logo"><img src="assets/projects/shield.svg" alt="" width="64" height="64"></span>
+            <span class="p-logo"><img src="assets/skills/agentic-ai.svg" alt="" width="64" height="64"></span>
+            <span class="p-logo"><img src="assets/skills/git.svg" alt="" width="64" height="64"></span>
+          </div>
+
+          <div class="p-body">
+            <p class="p-kicker">OFFICE · CGI</p>
+            <h3 class="p-name">AI-Powered PR Security Review Agent</h3>
+            <p class="p-desc">AI agent that reviews pull requests for security risks before merge, with structured reports, fix suggestions and a configurable evaluation-score gate.</p>
+
+            <div class="p-foot">
+              <ul class="p-tags"><li>AI Agent</li><li>PR Review</li><li>Security</li></ul>
+              <span class="p-go" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- Accessibility-Focused Frontend Developer -->
+      <li class="p-card reveal" data-filters="accessibility">
+        <a href="project-accessibility-frontend.html">
+          <div class="p-banner b-blue" aria-hidden="true">
+            <span class="p-logo"><img src="assets/projects/access.svg" alt="" width="64" height="64"></span>
+            <span class="p-logo p-logo--text">WCAG 2.1</span>
+          </div>
+
+          <div class="p-body">
+            <p class="p-kicker">OFFICE · CGI</p>
+            <h3 class="p-name">Accessibility-Focused Frontend Developer</h3>
+            <p class="p-desc">Accessibility-focused frontend work on a digital banking platform, bringing UI components in line with WCAG 2.1 for Canadian and European clients.</p>
+
+            <div class="p-foot">
+              <ul class="p-tags"><li>WCAG 2.1</li><li>Frontend</li><li>CSS</li></ul>
+              <span class="p-go" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- ============ PERSONAL PROJECTS ============ -->
+  <section class="p-group" data-group>
+    <h2>Personal Projects <small>4</small></h2>
+
+    <ul class="p-grid">
+
+      <!-- AWS Multi-Tier Application -->
+      <li class="p-card reveal" data-filters="aws">
+        <a href="project-aws-multi-tier.html">
+          <div class="p-banner b-blue" aria-hidden="true">
+            <span class="p-logo"><img src="assets/projects/layers.svg" alt="" width="64" height="64"></span>
+            <span class="p-logo p-logo--wide"><img src="assets/skills/aws.svg" alt="" width="64" height="64"></span>
+          </div>
+
+          <div class="p-body">
+            <p class="p-kicker">PERSONAL</p>
+            <h3 class="p-name">Highly Scalable Multi-Tier Web Application on AWS</h3>
+            <p class="p-desc">Multi-tier infrastructure on AWS using EC2, RDS, ALB, Auto Scaling and VPC for scalable, highly available systems, with CloudFront CDN and security rules.</p>
+
+            <div class="p-foot">
+              <ul class="p-tags"><li>EC2</li><li>RDS</li><li>ALB</li><li>VPC</li></ul>
+              <span class="p-go" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- AWS Resource Monitoring -->
+      <li class="p-card reveal" data-filters="aws monitoring">
+        <a href="project-aws-monitoring.html">
+          <div class="p-banner b-teal" aria-hidden="true">
+            <span class="p-logo"><img src="assets/projects/pulse.svg" alt="" width="64" height="64"></span>
+            <span class="p-logo p-logo--wide"><img src="assets/skills/aws.svg" alt="" width="64" height="64"></span>
+            <span class="p-logo"><img src="assets/projects/bell.svg" alt="" width="64" height="64"></span>
+          </div>
+
+          <div class="p-body">
+            <p class="p-kicker">PERSONAL · SEPTEMBER 2024</p>
+            <h3 class="p-name">Real-Time AWS Resource Monitoring with EventBridge &amp; SNS Alerts</h3>
+            <p class="p-desc">Real-time monitoring and alerting system built with AWS EventBridge and SNS to detect infrastructure state changes and trigger automated responses.</p>
+
+            <div class="p-foot">
+              <ul class="p-tags"><li>EventBridge</li><li>SNS</li><li>Alerts</li></ul>
+              <span class="p-go" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- CI/CD Automation -->
+      <li class="p-card reveal" data-filters="aws cicd">
+        <a href="project-cicd-docker-aws.html">
+          <div class="p-banner b-indigo" aria-hidden="true">
+            <span class="p-logo"><img src="assets/skills/docker.svg" alt="" width="64" height="64"></span>
+            <span class="p-logo"><img src="assets/skills/python.svg" alt="" width="64" height="64"></span>
+            <span class="p-logo"><img src="assets/skills/git.svg" alt="" width="64" height="64"></span>
+            <span class="p-logo p-logo--wide"><img src="assets/skills/aws.svg" alt="" width="64" height="64"></span>
+          </div>
+
+          <div class="p-body">
+            <p class="p-kicker">PERSONAL</p>
+            <h3 class="p-name">End-to-End CI/CD Automation with Docker and AWS</h3>
+            <p class="p-desc">Containerized Python application with Docker, delivered through CI/CD pipelines on AWS CodePipeline, CodeBuild and CodeDeploy with GitHub and Maven.</p>
+
+            <div class="p-foot">
+              <ul class="p-tags"><li>Docker</li><li>CodePipeline</li><li>CodeBuild</li><li>Maven</li></ul>
+              <span class="p-go" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- Terraform Spotify Automation -->
+      <li class="p-card reveal" data-filters="terraform">
+        <a href="project-terraform-spotify.html">
+          <div class="p-banner b-slate" aria-hidden="true">
+            <span class="p-logo"><img src="assets/skills/terraform.svg" alt="" width="64" height="64"></span>
+            <span class="p-logo"><img src="assets/projects/music.svg" alt="" width="64" height="64"></span>
+          </div>
+
+          <div class="p-body">
+            <p class="p-kicker">PERSONAL</p>
+            <h3 class="p-name">Automated Spotify Playlist Deployment using Terraform</h3>
+            <p class="p-desc">Infrastructure as Code with Terraform to automate resource provisioning and configuration, cutting deployment cycle time by 80%.</p>
+
+            <div class="p-foot">
+              <ul class="p-tags"><li>Terraform</li><li>IaC</li><li>Automation</li></ul>
+              <span class="p-go" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </section>
+
+</main>
+
+<script src="js/projects.js"></script>
+</body>
+</html>
